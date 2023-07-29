@@ -179,15 +179,17 @@ export default function ScheduleCreateDialog() {
                   <TimeSelect
                     name="time.hour"
                     label="Hour"
-                    className="col-span-4"
                     placeholder="Hour"
+                    className="col-span-4"
+                    scrollableClassName="h-48"
                     opts={HOURS}
                   />
                   <TimeSelect
                     name="time.minute"
-                    className="col-span-4"
-                    placeholder="Minute"
                     label="Minute"
+                    placeholder="Minute"
+                    className="col-span-4"
+                    scrollableClassName="h-48"
                     opts={MINUTES}
                   />
                   <TimeSelect

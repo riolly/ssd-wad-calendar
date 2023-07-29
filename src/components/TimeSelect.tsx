@@ -13,20 +13,23 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
+import { ScrollArea } from "./ui/scroll-area";
+import { cn } from "../lib/utils";
 
-import { ScrollArea } from "./ui/scroll-area"
 
 export function TimeSelect({
   name,
   label,
-  className,
   placeholder,
+  className,
   opts,
+  scrollableClassName,
 }: {
   name: string;
   label: string;
-  className?: string;
   placeholder?: string;
+  className?: string;
+  scrollableClassName?: string;
   opts: string[];
 }) {
   const { control } = useFormContext();
@@ -45,7 +48,7 @@ export function TimeSelect({
               </SelectTrigger>
             </FormControl>
               <SelectContent className="min-w-fit">
-                <ScrollArea className="max-h-48 rounded-md border">
+                <ScrollArea className={cn('border rounded', scrollableClassName)}>
                   {opts.map((opt, i) => (
                     <SelectItem key={`${i}-${opt}`} value={opt}>
                       {opt}
