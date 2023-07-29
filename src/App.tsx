@@ -4,6 +4,7 @@ import DateCell, { PrevNextDateCell } from "./components/DateCell";
 import ScheduleCreateDialog from "./components/ScheduleCreate";
 import ScheduleEditDialog from "./components/ScheduleEdit";
 import { GithubIcon } from "lucide-react";
+import { Toaster } from "./components/ui/toaster";
 
 export default function HomePage() {
   // toDate mean today
@@ -54,6 +55,7 @@ export default function HomePage() {
         <ScheduleCreateDialog />
         <ScheduleEditDialog />
       </div>
+      <Toaster />
     </main>
   );
 }
