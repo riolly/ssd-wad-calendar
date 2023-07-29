@@ -9,6 +9,6 @@ Calendrier - Three important things per day.
 </h1>
 
 <p align='center'>
-Note: migrated from [this repo](https://github.com/riolly/ssd-wad-calendar-x) because the limitation of zustand
+Note: migrated from <a href="https://github.com/riolly/ssd-wad-calendar-x">old repo</a> because of zustand has conflict with Next.js app dir and doesn't make sense anyway using Next.js.
 </p>
 
