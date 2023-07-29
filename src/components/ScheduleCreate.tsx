@@ -175,12 +175,12 @@ export default function ScheduleCreateDialog() {
               </Label>
 
               <div className="col-span-6 flex flex-col">
-                <div className="grid grid-cols-12 gap-4" id="time">
+                <div className="flex space-x-4" id="time">
                   <TimeSelect
                     name="time.hour"
                     label="Hour"
                     placeholder="Hour"
-                    className="col-span-4"
+                    className="w-40"
                     scrollableClassName="h-48"
                     opts={HOURS}
                   />
@@ -188,14 +188,14 @@ export default function ScheduleCreateDialog() {
                     name="time.minute"
                     label="Minute"
                     placeholder="Minute"
-                    className="col-span-4"
+                    className="w-44"
                     scrollableClassName="h-48"
                     opts={MINUTES}
                   />
                   <TimeSelect
                     name="time.format"
                     label="12 hour format"
-                    className="col-span-4"
+                    className="w-32"
                     opts={HOUR_FORMAT}
                   />
                 </div>
