@@ -15,7 +15,7 @@ export default function HomePage() {
   const dateds = useDatedStore((state) => state.dateds);
 
   return (
-    <main className="flex min-h-screen flex-col items-center bg-gradient-to-b overflow-clip from-blue-950 to-violet-950 text-white relative">
+    <main className="flex min-h-screen flex-col items-center bg-gradient-to-b overflow-clip from-blue-950 to-violet-950 text-white relative dark">
       <div className="absolute w-[200%] h-[200%] -top-[37%] bg-pattern bg-opacity-50 rotate-12"></div>
       <div className="absolute w-full h-full bg-gradient-to-r from-slate-950/80 via-transparent to-slate-950/80"></div>
       <div className="absolute w-full h-1/3 bg-gradient-to-b from-slate-950 to-transparent"></div>
