@@ -1,5 +1,3 @@
-import React from "react";
-
 import { DAYS, getDated } from "./lib/date";
 import { useDatedStore } from "./lib/store";
 import DateCell, { PrevNextDateCell } from "./components/DateCell";
